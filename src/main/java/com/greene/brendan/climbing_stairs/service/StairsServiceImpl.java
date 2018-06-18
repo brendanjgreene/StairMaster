@@ -20,7 +20,7 @@ public class StairsServiceImpl implements StairsService {
 	    ValidInput vi = new ValidInput();
 	    
 	    if (vi.checkValidInput(stairs, strides)) {
-	    	response="{\"message\":\"The minumum number of steps to reach the top of youe stairwell is " +Integer.toString(sp.getFlightsSteps(stairs, strides))+"\","
+	    	response="{\"message\":\"The minumum number of steps to reach the top of your stairwell is " +Integer.toString(sp.getFlightsSteps(stairs, strides))+"\","
 	    			+ "\"totalStrides\":"+Integer.toString(sp.getFlightsSteps(stairs, strides))+","
 	    					+ "\"stairs\":"+util.getJSONForObject(stairs)+","
 	    							+ "\"strides\":"+strides+"}";
