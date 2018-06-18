@@ -19,12 +19,5 @@ public class StairsProcessor {
 		
 	}
 	
-	/*public int getLandingSteps(int flights) {
-		
-		int LandingSteps = (flights-1)*2;
-		System.out.println(LandingSteps);
-		return LandingSteps; 
-		
-	}*/
 
 }

@@ -1,12 +1,12 @@
 package com.greene.brendan.climbing_stairs.domain;
 
-public class Input {
+public class InputProcessor {
 	
 	private int[] stairs;
 	private int strides;
 	
 	
-	public Input(int[] stairs, int strides){
+	public InputProcessor(int[] stairs, int strides){
 		this.stairs = stairs;
 		this.strides = strides;
 	}
