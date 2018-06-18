@@ -11,10 +11,10 @@ public class StairsProcessor {
 			allFlightSteps += fp.stridesInFlight(stair, strides);
 		}
 		int landingSteps = (floors-1)*2;
-		System.out.println("total Landind Strides " + landingSteps);
-		System.out.println("total Flights Strides " + allFlightSteps);
+		//System.out.println("total Landind Strides " + landingSteps);
+		//System.out.println("total Flights Strides " + allFlightSteps);
 		int totalStrides = landingSteps + allFlightSteps;
-		System.out.println("Total Strides " + totalStrides);
+		//System.out.println("Total Strides " + totalStrides);
 		return totalStrides;
 		
 	}

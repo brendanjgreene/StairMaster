@@ -11,7 +11,7 @@ public class ValidInput {
 			error = error.concat(" Invalid Floors must have at least 1 and no more than 30.");
 			return false;
 		}
-		System.out.println("valid Floors");
+		//System.out.println("valid Floors");
 		return true;
 	}
 	
@@ -22,7 +22,7 @@ public class ValidInput {
 				return false;
 			}
 		}
-		System.out.println("valid flight");
+		//System.out.println("valid flight");
 		return true;
 	}
 	
@@ -31,7 +31,7 @@ public class ValidInput {
 			error = error.concat(" Invalid stride must be at least 1 and no more than 4.");
 			return false;
 		}
-		System.out.println("valid stride");
+		//System.out.println("valid stride");
 		return true;
 	}
 	

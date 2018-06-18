@@ -28,7 +28,7 @@ public class StairsServiceImpl implements StairsService {
 	    	} else {
 	    		String error = vi.error;
 	    		response="{\"error\":\""+error+"\",\"message\":\"Error your Stairwell doesnt comply with the rules\",\"stairs\":"+util.getJSONForObject(stairs)+",\"strides\":"+strides+"}";
-	        	System.out.println("invalid");
+	        	//System.out.println("invalid");
 	        }
 		return response;
 	    }

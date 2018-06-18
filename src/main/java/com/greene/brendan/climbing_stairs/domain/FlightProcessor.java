@@ -11,7 +11,7 @@ public class FlightProcessor {
 			regStrides += 1;
 		} 
 	}
-	System.out.println("strides on this flight "+ regStrides);
+	//System.out.println("strides on this flight "+ regStrides);
 	return regStrides;
 
 }
