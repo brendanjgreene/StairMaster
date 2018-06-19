@@ -17,13 +17,12 @@ public class StairsEndpoint {
 	
 	@Path("/json")
 	@POST
-	@Produces({ "application/json" })
+	@Produces({"application/json"})
 	public String getSteps(String stairCase) {
 		
 		InputProcessor data = util.getObjectForJSON(stairCase, InputProcessor.class);
 		
-		String jsonString = service.getSteps(data.getStairs(), data.getStrides());
-		return jsonString;
+		return service.getSteps(data.getStairs(), data.getStrides());
 		
 	}
 

@@ -5,13 +5,12 @@ public class FlightProcessor {
 	public int stridesInFlight(int steps, int strides) {
 		
 	int regStrides = 0;
-	if (steps >0&steps<=20) {
+	if (steps >0 && steps<=20) {
 		regStrides = steps / strides;
 		if ((steps % strides) != 0) {
 			regStrides += 1;
 		} 
 	}
-	//System.out.println("strides on this flight "+ regStrides);
 	return regStrides;
 
 }

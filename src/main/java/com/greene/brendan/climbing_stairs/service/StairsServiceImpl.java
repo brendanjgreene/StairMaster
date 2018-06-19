@@ -1,20 +1,15 @@
 package com.greene.brendan.climbing_stairs.service;
 
-import org.apache.log4j.Logger;
-
 import com.greene.brendan.climbing_stairs.domain.StairsProcessor;
 import com.greene.brendan.climbing_stairs.domain.ValidInput;
 import com.greene.brendan.climbing_stairs.util.JSONUtil;
 
 public class StairsServiceImpl implements StairsService {
-	
-	private static final Logger LOGGER = Logger.getLogger(StairsService.class);
-	
+		
 	private JSONUtil util = new JSONUtil();
 
 	public String getSteps(int[] stairs, int strides) {
-		// TODO Auto-generated method stub
-		LOGGER.info("In StairsServiceImpl getSteps()");
+
 		String response = null;
 		StairsProcessor sp = new StairsProcessor();
 	    ValidInput vi = new ValidInput();
@@ -28,7 +23,6 @@ public class StairsServiceImpl implements StairsService {
 	    	} else {
 	    		String error = vi.error;
 	    		response="{\"error\":\""+error+"\",\"message\":\"Error your Stairwell doesnt comply with the rules\",\"stairs\":"+util.getJSONForObject(stairs)+",\"strides\":"+strides+"}";
-	        	//System.out.println("invalid");
 	        }
 		return response;
 	    }
